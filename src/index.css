@@ -1,6 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --colorPrimary: #B9FF66;
+  --colorPrimaryDark: #191A23;
+  --colorPrimaryLight: #F3F3F3;
+  --colorBlack: #000000;
+  --colorWhite: #ffffff;
+}
+@font-face {
+  font-family: 'SpaceGrotesk';
+  src: url(./assets/fonts/SpaceGrotesk.ttf);
+}
+@font-face {
+  font-family: 'Raleway';
+  src: url(./assets/fonts/Raleway.ttf);
+}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family:  'SpaceGrotesk', 'Raleway', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -10,4 +30,41 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.mb-20{
+  margin-bottom: 20px;
+}
+.container-page{
+  margin-top: 160px;
+  position: relative;
+  z-index: 99;
+  min-height: 50vh;
+}
+.container-page .container{
+  width: 1240px;
+  margin: 0 auto 140px;
+}
+.button-green {
+  background: var(--colorPrimary);
+  padding: 20px 35px;
+  border-radius: 14px;
+  text-decoration: none;
+  color: var(--colorBlack);
+  margin-top: 20px;
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+}
+.button-green:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 1240px) {
+  .container-page{
+    margin-top: 100px;
+  }
+  .container-page .container {
+    width: 100%;
+    margin: 0 auto 60px;
+    padding: 0 20px;
+  }
 }
