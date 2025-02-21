@@ -3,7 +3,7 @@ import "./index.css";
 import useCasesBanner from "../../assets/images/use-case/use-cases-banner.png";
 import iconRead from "../../assets/images/use-case/iconRead.png";
 import useCaseContactCard from "../../assets/images/use-case/use-case-contact-card.png";
-import Slider from "../../components/sliders";
+import Slider from "../../components/slider";
 
 function UseCase() {
 

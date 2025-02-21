@@ -1,4 +1,4 @@
-.container {
+.container.services {
     max-width: 1240px;
     margin: 0 auto;
     padding: 15px;
@@ -340,12 +340,12 @@
 
 /* USE CASES Section */
 
-.use-cases-section {
+.service-use-cases-section {
     background: white;
     padding-bottom: 4rem;
 }
 
-.use-cases-container {
+.service-use-cases-container {
     background: #0F0F13;
     padding: 3rem;
     border-radius: 3rem;
@@ -356,7 +356,7 @@
     color: white;
 }
 
-.use-case-card {
+.service-use-case-card {
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -367,20 +367,20 @@
     position: relative;
 }
 
-.use-case-title {
+.service-use-case-title {
     font-size: 1.6rem;
     font-weight: bold;
     margin-bottom: 1rem;
 }
 
-.use-case-description {
+.service-use-case-description {
     font-size: 1rem;
     line-height: 1.5;
     color: #ccc;
     flex-grow: 1;
 }
 
-.use-case-link {
+.service-use-case-link {
     margin-top: 1.5rem;
     color: #C6FF69;
     font-weight: bold;
@@ -388,7 +388,7 @@
     transition: color 0.3s ease;
 }
 
-.use-case-link:hover {
+.service-use-case-link:hover {
     color: #A4E85F;
 }
 
@@ -401,7 +401,7 @@
     background: white;
 }
 
-.use-case-card:last-child .divider {
+.service-use-case-card:last-child .divider {
     display: none;
 }
 
@@ -516,11 +516,11 @@
     .description {
         width: 50%;
     }
-    /* .use-cases-container {
+    /* .service-use-cases-container {
         flex-direction: column;
         align-items: center;
     }
-    .use-case-card {
+    .service-use-case-card {
         text-align: center;
         align-items: center;
     }
@@ -530,7 +530,7 @@
 }
 
 @media (max-width: 700px) {
-    .use-cases-container {
+    .service-use-cases-container {
         flex-direction: column;
     }
     .service-item-wrapper {
@@ -566,5 +566,25 @@
         justify-content: center;
         max-width: 100%;
         text-align: center;
+    }
+}
+@media (max-width: 1240px) {
+    .hero-section {
+        padding: 20px;
+    }
+    .hero-content h1 {
+        font-size: 36px;
+    }
+    .hero-image-container {
+        width: 100%;
+    }
+    .cta-image {
+        display: none;
+    }
+    .seo-content {
+        max-width: 100%;
+    }
+    .seo-title{
+        max-width: 100%;
     }
 }

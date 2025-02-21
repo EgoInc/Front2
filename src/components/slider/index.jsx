@@ -53,8 +53,8 @@ function Slider({ slides }) {
                 ))}
             </div>
             <div className="slider-buttons">
-                <button className='arrow-button' onClick={prevSlide} disabled={currentIndex === 0}>
-                    <FontAwesomeIcon icon={faArrowLeft} className="arrow-icon" />
+                <button className='arrow-button-slider' onClick={prevSlide} disabled={currentIndex === 0}>
+                    <FontAwesomeIcon icon={faArrowLeft} className="arrow-icon-slider" />
                 </button>
                 <div className="slider-dots">
                     {slides.map((_, index) => (
@@ -63,8 +63,8 @@ function Slider({ slides }) {
                         </span>
                     ))}
                 </div>
-                <button className='arrow-button' onClick={nextSlide} disabled={currentIndex === slides.length - 1}>
-                    <FontAwesomeIcon icon={faArrowRight} className="arrow-icon" />
+                <button className='arrow-button-slider' onClick={nextSlide} disabled={currentIndex === slides.length - 1}>
+                    <FontAwesomeIcon icon={faArrowRight} className="arrow-icon-slider" />
                 </button>
             </div>
         </div>

@@ -1,10 +1,13 @@
-  .title {
+.container-page.pricing{
+  padding: 0 20px;
+}
+.title-pricing {
     font-size: 48px;
     margin-bottom: 30px;
     color: var(--colorBlack);
   }
-  
-  .description  {
+
+  .description-pricing  {
     font-size: 16px;
     max-width: 490px;
     color: var(--colorBlack);
@@ -15,7 +18,6 @@
     display: flex;
     justify-content: center;
     gap: 35px;
-    flex-wrap: wrap;
   }
   
   .card {
@@ -208,6 +210,9 @@
   }
 
   @media (max-width: 1240px) {
+    .price_cards {
+      flex-wrap: wrap;
+    }
     .faq-heading {
       font-size: 36px;
       text-align: center;
@@ -230,11 +235,14 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+      flex-direction: column;
     }
   
     .faq-question {
       flex-grow: 1;
       font-weight: 600;
+      justify-content: space-between;
+      width: 100%;
     }
   
     .open_btn {
@@ -247,6 +255,13 @@
 
     .faq-answer {
       font-size: 12px;
+    }
+    .card{
+      width: 100%;
+      height: auto;
+    }
+    .buttons {
+      width: 100%;
     }
   }
   

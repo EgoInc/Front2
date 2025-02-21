@@ -127,8 +127,8 @@ function Pricing() {
   return (
     <div className="container-page pricing">
       <div className="container plans">
-        <h1 className="title">Цены</h1>
-        <p className="description">
+        <h1 className="title-pricing">Цены</h1>
+        <p className="description-pricing">
           Повысьте свою узнаваемость в интернете: конкурентоспособные цены для
           исключительных результатов
         </p>

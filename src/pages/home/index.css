@@ -519,7 +519,7 @@
 }
 @media (max-width: 1240px) {
     .home-contact__block{
-        padding: 20px;
+        padding: 40px 20px;
     }
     .home-contact__img{
         display: none;

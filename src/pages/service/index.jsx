@@ -131,7 +131,7 @@ const UseCasesSection = () => {
   ];
 
   return (
-    <div className="use-cases-section">
+    <div className="service-use-cases-section">
       <section className="section-header">
         <h3 className="title">Кейсы</h3>
         <p className="description">
@@ -139,12 +139,12 @@ const UseCasesSection = () => {
         </p>
       </section>
 
-      <div className="use-cases-container">
+      <div className="service-use-cases-container">
         {useCases.map((caseItem, index) => (
-          <div className="use-case-card" key={index}>
-            <h4 className="use-case-title">{caseItem.title}</h4>
-            <p className="use-case-description">{caseItem.description}</p>
-            <a href={caseItem.link} className="use-case-link">Подробнее</a>
+          <div className="service-use-case-card" key={index}>
+            <h4 className="service-use-case-title">{caseItem.title}</h4>
+            <p className="service-use-case-description">{caseItem.description}</p>
+            <a href={caseItem.link} className="service-use-case-link">Подробнее</a>
             {index < useCases.length - 1 && <div className="divider" />}
           </div>
         ))}
@@ -183,7 +183,7 @@ const Service = () => {
   };
 
   return (
-    <div className="container" id="services">
+    <div className="container services" id="services">
       <HeroSection />
       <SeoSection />
       <SeoProcessSection />

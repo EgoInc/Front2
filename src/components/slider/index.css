@@ -82,7 +82,7 @@
     justify-content: center;
     gap: 189px;
 }
-.arrow-button{
+.arrow-button-slider{
     background: none;
     border: none;
     cursor: pointer;
@@ -90,7 +90,7 @@
     font-size: 30px;
     transition: all 0.3s ease;
 }
-.arrow-button:disabled{
+.arrow-button-slider:disabled{
     opacity: 0.5;
     cursor: not-allowed;
 }
