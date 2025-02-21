@@ -1,0 +1,254 @@
+  .title {
+    font-size: 48px;
+    margin-bottom: 30px;
+    color: var(--colorBlack);
+  }
+  
+  .description  {
+    font-size: 16px;
+    max-width: 490px;
+    color: var(--colorBlack);
+    margin-bottom: 100px;
+  }
+  
+  .price_cards {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    background: var(--colorWhite);
+    border-radius: 28px;
+    border: 1px solid var(--colorPrimaryDark);
+    box-shadow: 0px 7px 0px 0px var(--colorBlack);
+    width: 390px;
+    height: 880px;
+    padding: 34px;
+    text-align: left;
+    position: relative;
+  }
+  
+  .card h3 {
+    margin-bottom: 35px;
+    font-size: 24px;
+  }
+  
+  .card p {
+    font-size: 16px;
+    margin-bottom: 55px;
+  }
+  
+  .card p span {
+    font-size: 48px;
+    font-weight: 500;
+    margin-right: 8px;
+  }
+  
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 330px;
+  }
+  
+  .buttons a {
+    text-decoration: none;
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    display: block;
+  }
+  
+  .buttons a:first-child {
+    background: var(--colorPrimaryDark);
+    color: var(--colorWhite);
+  }
+  
+  .buttons a:last-child {
+    background: var(--colorWhite);
+    outline: 2px solid var(--colorPrimaryDark);
+    color: var(--colorBlack);
+  }
+
+  .line {
+    margin-top: 45px;
+    background: var(--colorPrimaryDark);
+    height: 2px;
+    border: none;
+  }
+
+  .list {
+    list-style: none;
+    margin-top: 40px;
+    padding: 0;
+  }
+
+  .list-item {
+    display: flex; 
+    align-items: flex-start;
+    margin-top: 25px;
+  }
+
+  .list-item span {
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .arrow-icon {
+    width: 24px;
+    height: 24px;
+    padding: 4px;
+    background: var(--colorPrimary);
+    border-radius: 50%;
+    color: var(--colorBlack);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 12px; 
+    flex-shrink: 0;
+    top: 0;
+    left: 0;
+  }
+  
+  .popular {
+    background: var(--colorPrimaryDark);
+    color: var(--colorWhite);
+  }
+
+  .popular .line {
+    background: var(--colorWhite);
+  }
+
+  .popular .buttons a:first-child {
+    background: var(--colorPrimary);
+    color: var(--colorPrimaryDark);
+  }
+
+  .popular .buttons a:last-child {
+    background: var(--colorPrimaryDark);
+    color: var(--colorWhite);
+    outline: 2px solid var(--colorWhite);
+  }
+
+  .popular-badge {
+    position: absolute;
+    right: 10px;
+    background: var(--colorPrimary);
+    color: var(--colorPrimaryDark);
+    font-weight: 700;
+    padding: 5px 10px;
+    border-radius: 25px;
+  }
+
+  .faq-heading {
+    font-weight: 700;
+    display: inline-block;
+    line-height: 1.1;
+    max-width: 350px;
+    margin-bottom: 100px;
+  }
+  
+  .faq-heading span {
+    display: inline-block;
+    font-size: 32px;
+    background: var(--colorPrimary); 
+    padding: 5px 10px;
+    border-radius: 10px;
+  }
+
+  .faq-item {
+    background: var(--colorPrimaryLight);
+    font-size: 24px;
+    font-weight: thin;
+    padding: 45px;
+    margin-bottom: 30px;
+    border-radius: 40px;
+    border: 1.5px solid var(--colorPrimaryDark);
+    cursor: pointer;
+    box-shadow: 0px 2px 0px 0px var(--colorPrimaryDark);
+  }
+  
+  .faq-item.open {
+    background: var(--colorPrimary);
+  }
+
+  .faq-item.open .open_btn {
+    background: var(--colorPrimaryLight);
+  }
+  
+  .faq-question {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    align-items: center; 
+  }
+  
+  .open_btn {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    border: 1.5px solid var(--colorPrimaryDark);
+    width: 55px;
+    font-size: 40px;
+    height: 55px;
+    border-radius: 50%;
+  }
+
+  .faq-answer {
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 400;
+    border-top: 1.5px solid var(--colorPrimaryDark);
+    padding-top: 25px;
+  }
+
+  @media (max-width: 1240px) {
+    .faq-heading {
+      font-size: 36px;
+      text-align: center;
+      max-width: 100%;
+      margin-bottom: 60px;
+    }
+  
+    .faq-heading span {
+      font-size: 28px;
+      padding: 8px 12px;
+      border-radius: 12px;
+    }
+  
+    .faq-item {
+      font-size: 20px;
+      padding: 30px;
+      border-radius: 30px;
+      margin-bottom: 20px;
+      box-shadow: 0px 5px 0px 0px var(--colorBlack);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  
+    .faq-question {
+      flex-grow: 1;
+      font-weight: 600;
+    }
+  
+    .open_btn {
+      width: 40px;
+      height: 40px;
+      font-size: 24px;
+      border: 2px solid var(--colorPrimaryDark);
+      flex-shrink: 0;
+    }
+
+    .faq-answer {
+      font-size: 12px;
+    }
+  }
+  
+
+  

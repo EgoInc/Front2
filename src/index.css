@@ -44,6 +44,9 @@ code {
   width: 1240px;
   margin: 0 auto 140px;
 }
+.container-page .container.mb-100{
+  margin-bottom: 100px;
+}
 .button-green {
   background: var(--colorPrimary);
   padding: 20px 35px;
