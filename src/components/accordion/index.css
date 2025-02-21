@@ -1,0 +1,112 @@
+.accordion__item {
+    border: 1px solid var(--colorPrimaryDark);
+    margin-bottom: 30px;
+    border-radius: 45px;
+    overflow: hidden;
+    padding: 0 60px;
+    background: var(--colorPrimaryLight);
+    box-shadow: 0 5px 0 0 var(--colorPrimaryDark);
+    transition: all 0.3s ease;
+}
+.accordion__item.open {
+    background-color: var(--colorPrimary);
+}
+.accordion__header {
+    display: flex;
+    align-items: center;
+    padding: 41px 0;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.accordion__header h2{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+.accordion__index{
+    font-size: 60px;
+    line-height: 76px;
+    font-weight: 500;
+    color: var(--colorBlack);
+}
+.accordion__header-button{
+    width: 58px;
+    border: 1px solid var(--colorPrimaryDark);
+    height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+}
+.accordion__title{
+    font-size: 30px;
+    line-height: 38px;
+    font-weight: 500;
+    color: var(--colorBlack);
+}
+.accordion__item.open .accordion__header{
+    padding-bottom: 30px;
+    border-bottom: 1px solid var(--colorBlack);
+}
+.accordion__icon {
+    font-size: 20px;
+    transition: transform 0.3s ease;
+}
+.accordion__icon.rotate-open {
+    transform: rotate(180deg);
+}
+.accordion__icon.rotate-close {
+    transform: rotate(0deg);
+}
+.accordion__wrapper {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+.accordion__item.open .accordion__wrapper {
+    max-height: 150px;
+}
+.accordion__content {
+    transition: all 0.3s ease;
+    margin-top: 30px;
+    padding-bottom: 41px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23px;
+    color: var(--colorBlack);
+}
+@media (max-width: 1240px) {
+    .accordion__header{
+        padding: 20px 0;
+    }
+    .accordion__header h2{
+        gap: 15px;
+        width: 80%;
+    }
+    .accordion__item {
+        padding: 0 30px;
+    }
+    .accordion__index{
+        font-size: 30px;
+    }
+    .accordion__title{
+        font-size: 20px;
+    }
+    .accordion__header-button{
+        width: 30px;
+        height: 30px;
+    }
+    .accordion__item.open .accordion__header{
+        padding-bottom: 20px;
+    }
+    .accordion__item.open {
+        padding-bottom: 20px;
+    }
+    .accordion__content{
+        margin-bottom: 20px;
+    }
+    .accordion__content {
+        font-size: 16px;
+    }
+}
