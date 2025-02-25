@@ -8,7 +8,7 @@ import NotFound from "./pages/not-found";
 
 export const routes = [
     { path: "/", title: "Главная | Позитивус", element: <Home /> },
-    { path: "/about", title: "О нас | Позитивус", element: <About /> },
+    { path: "/about", title: "О нас | Позитивус", element: <ComingSoon /> },
     { path: "/services", title: "Услуги | Позитивус", element: <Service /> },
     { path: "/use-cases", title: "Кейсы | Позитивус", element: <UseCase /> },
     { path: "/pricing", title: "Цены | Позитивус", element: <Pricing /> },
